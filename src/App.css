@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;    
+}
+
+.pointer{
+    cursor: pointer;
+}
+.top-section {
+    background-color: #B67DFF;
+    text-align: center;
+    color: white;
+    padding: 3vw;
+}
+
+.title {
+    font-size: 8vw;
+    text-shadow: 3px 3px 6px #390b75;
+
+}
+
+.sub-title {
+    font-size: 1.5vw;
+    text-shadow: 3px 3px 6px rgb(63, 63, 63);
+
+}
+
+#playBtn {
+    margin: auto;
+    display: block;
+    background-color: #B67DFF;
+    border-radius: 10px;
+    text-shadow: 3px 3px 6px rgb(63, 63, 63);
+    box-shadow: 3px 3px 6px rgb(63, 63, 63);
+    cursor: pointer;
+    color: white;
+    padding: 1vw 2vw;
+    border: none;
+    font-size: 1.5vw;
+    margin-top: 10vh;
+}
+
+footer {
+    position: absolute;
+    bottom: 7vh;
+    width: 100%;
+    text-align: center;
+}
+
+#creator-name {
+    font-weight: 900;
+}
+
+.question {
+    font-size: 3vw;
+    margin-top: 2vw;
+}
+
+.options {
+    width: fit-content;
+    margin: auto;
+    margin-top: 4vw;
+}
+
+.option {
+    width: 40vw;
+    background-color: #B67DFF;
+    padding: 1vw;
+    margin: 1vw;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 3px 3px 6px rgb(63, 63, 63);
+    text-align: center;
+}
+.highlight{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 5vw;
+}
+.highlight button{    
+    background-color: #B67DFF;
+    padding: .6vw 1vw;
+    border-radius: 10px;
+    border: none;    
+    text-shadow: 3px 3px 6px rgb(63, 63, 63);
+    box-shadow: 3px 3px 6px rgb(63, 63, 63);
+    font-size: 1.2vw;
+    color: white;
+}
