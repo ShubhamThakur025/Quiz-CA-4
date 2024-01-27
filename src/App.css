@@ -80,6 +80,9 @@ footer {
     box-shadow: 3px 3px 6px rgb(63, 63, 63);
     text-align: center;
 }
+.option:hover{
+    background-color: #7000FF;
+}
 .highlight{
     display: flex;
     justify-content: space-between;
