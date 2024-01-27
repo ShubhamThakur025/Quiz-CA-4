@@ -9,7 +9,7 @@ function App() {
   //for changing pages or components, score and dark mode respectively
   const [currentPage, changePage] = useState("Welcome");
   const [score, newScore] = useState(0)
-  const [mode, changeMode] = useState("Light")
+  const [mode, changeMode] = useState("Dark")
 
   //to handle the switch bw components
   const handleSwitchPage = (page) => {
@@ -43,20 +43,20 @@ function App() {
 
   return (
     <div className="main" style={{
-      backgroundColor: mode === "Dark" ? "rgb(40, 40, 40)" : "White"
+      backgroundColor: mode === "Light" ? "rgb(40, 40, 40)" : "White"
     }}>
       {/* mode button */}
       <div id="mode" onClick={switchMode}
         style={{
-          backgroundColor: mode === "Dark" ? "rgb(48, 48, 48)" : "White",
-          color: mode === "Dark" ? "White" : "Black",
-          borderColor: mode === "Dark" ? "White" : "black"
+          backgroundColor: mode === "Light" ? "rgb(48, 48, 48)" : "White",
+          color: mode === "Light" ? "White" : "Black",
+          borderColor: mode === "Light" ? "White" : "black"
         }}
       >{mode}</div>
       {renderPage()}
       <footer style={{
-        backgroundColor: mode === "Dark" ? "rgb(40, 40, 40)" : "white",
-        color: mode === "Dark" ? "white" : "rgb(40,40,40)"
+        backgroundColor: mode === "Light" ? "rgb(40, 40, 40)" : "white",
+        color: mode === "Light" ? "white" : "rgb(40,40,40)"
       }}>
         <div>Developed & Designed by:</div>
         <div id="creator-name">Shubham Thakur</div>
