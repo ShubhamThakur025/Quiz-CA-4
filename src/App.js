@@ -3,6 +3,7 @@ import "./App.css";
 import Result from "./components/Result";
 import QuestionBox from "./components/QuestionBox";
 import Welcome from "./components/Welcome";
+import "./media.css";
 
 function App() {
   const [currentPage, changePage] = useState("Welcome");
@@ -38,7 +39,7 @@ function App() {
       <div className="main" style={{ backgroundColor: mode === "Dark" ? "rgb(40, 40, 40)" : "White" }}>
         <div id="mode" onClick={switchMode}
           style={{
-            backgroundColor: mode === "Dark" ? "rgb(40, 40, 40)" : "White",
+            backgroundColor: mode === "Dark" ? "rgb(48, 48, 48)" : "White",
             color: mode === "Dark" ? "White" : "Black",
             borderColor: mode === "Dark" ? "White" : "black"
           }}

@@ -1,0 +1,52 @@
+@media (orientation: portrait) {
+    .top-section {
+        height: 52vh;
+    }
+
+    .title {
+        font-size: 18vw;
+        padding-top: 13vh
+    }
+
+    .sub-title {
+        font-size: 5.5vw;
+    }
+
+    #playBtn {
+        padding: 4vw 7vw;
+        font-size: 5.5vw;
+    }
+
+    #mode {
+        top: 5vw;
+        right: 6vw;
+    }
+
+    footer {
+        font-size: 3vw;
+        bottom: 1vh;
+    }
+
+    .option {
+        width: 82vw;
+        margin: 2.3vw;
+    }
+
+    .question {
+        font-size: 7.2vw;
+        margin-top: 10vh;
+    }
+
+    .highlight button {
+        padding: 3vw 3vw;
+        font-size: 4vw;
+        margin-top: 3vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 10vw;
+        padding-top: 13vh
+    }
+}

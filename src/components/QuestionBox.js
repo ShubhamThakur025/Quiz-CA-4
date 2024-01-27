@@ -26,8 +26,8 @@ export default function QuestionBox(props) {
   return (
     <div>
       <div className='top-section'>
-        <p>{`Question ${currentQuestion + 1} of 5`}</p>
-        <h1 className='question' style={{ color: color }}>{questions[currentQuestion].text}</h1>
+        <p id='question-series'>{`Question ${currentQuestion + 1} of 5`}</p>
+        <h1 className='question' style={{ color: color}}>{questions[currentQuestion].text}</h1>
       </div>
       <div className='options'>
         <div className='option pointer' onClick={() => { setQuestion(0) }}>{questions[currentQuestion].options[0].text}</div>
