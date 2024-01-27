@@ -1,7 +1,7 @@
 ![Logo-nav](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/Kalvium-Logo.png)
 
 ### CA - 4: More Quiz
-A simple React Quiz by Shubham Thakur, Sqaud 59, Kalvium.
+A simple React Quiz by Shubham Thakur, Squad 59, Kalvium.
 This is a part of CA-4 for frontend web developement and CA-3 for design for developers assesment.
 
 ### Features:
