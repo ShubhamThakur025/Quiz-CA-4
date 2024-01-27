@@ -6,7 +6,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;    
 }
-
+body{
+    height: 100vh;
+}
 .pointer{
     cursor: pointer;
 }
@@ -49,6 +51,7 @@ footer {
     bottom: 7vh;
     width: 100%;
     text-align: center;
+    background-color: inherit;
 }
 
 #creator-name {
@@ -90,4 +93,13 @@ footer {
     box-shadow: 3px 3px 6px rgb(63, 63, 63);
     font-size: 1.2vw;
     color: white;
+}
+#mode{
+    position: absolute;
+    top: 1vw;
+    right: 2vw;
+    cursor: pointer;
+    padding: .5vw 1vw;
+    border: 2px solid black;
+    border-radius: 10px;
 }

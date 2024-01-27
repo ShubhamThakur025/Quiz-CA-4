@@ -38,7 +38,7 @@ const questions = [
     ],
   },
   {
-    text: "How many elements can a valid react component return?",
+    text: "How many elements can a valid React component return?",
     options: [
       { id: 0, text: "1", isCorrect: true },
       { id: 1, text: "2", isCorrect: false },
@@ -46,6 +46,7 @@ const questions = [
       { id: 3, text: "4", isCorrect: false },
     ],
   },
+  
 ];
 
 export default questions;

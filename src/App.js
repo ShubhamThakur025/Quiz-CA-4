@@ -1,41 +1,52 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Result from "./components/Result";
 import QuestionBox from "./components/QuestionBox";
 import Welcome from "./components/Welcome";
 
-
-
 function App() {
-  const [currentPage, changePage] = useState("Welcome")
-  const handleSwitchPage = (turn) => {
-    switch (turn) {
-      case 1:
-        changePage("QuestionBox")
-        break
-      case 2:
-        changePage("Result")
-        break
-      default:
-        changePage("Welcome")
-        break
-    }
+  const [currentPage, changePage] = useState("Welcome");
+  const [score, newScore] = useState(0)
+  const [mode, changeMode] = useState("Light")
+
+  const handleSwitchPage = (page) => {
+    changePage(page)
+  };
+
+  const handleScore = (score) => {
+    newScore(score)
+    changePage("Result")
   }
-  const setPage = (currentPage) => {
+
+  const switchMode = () => {
+    mode == "Dark" ? changeMode("Light") : changeMode("Dark")
+  }
+  const renderPage = () => {
     switch (currentPage) {
       case 'Welcome':
-        return <Welcome handleClick={() => handleSwitchPage(1)} />
+        return <Welcome handleClick={() => handleSwitchPage("QuestionBox")} />;
       case 'QuestionBox':
-        return <QuestionBox handleClick={() => handleSwitchPage(2)} />
+        return <QuestionBox handleClick={handleScore} />;
       case 'Result':
-        return <Result handleClick={handleSwitchPage} />
+        return <Result score={score} handleClick={() => handleSwitchPage("Welcome")} />;
       default:
-        return <Welcome handleClick={handleSwitchPage} />
+        return <Welcome handleClick={() => handleSwitchPage("Welcome")} />;
     }
-  }
+  };
+
   return (
     <div>
-      {setPage(currentPage)}
+      <body style={{backgroundColor: mode === "Dark" ? "rgb(40, 40, 40)" : "White" }}>
+        <div id="mode" onClick={switchMode}
+          style={{
+            backgroundColor: mode === "Dark" ? "rgb(40, 40, 40)" : "White",
+            color: mode === "Dark" ? "White" : "Black",
+            borderColor: mode === "Dark" ? "White" : "black"
+          }}
+        >{mode}</div>
+        {renderPage()}
+      </body>
+
     </div>
   );
 }

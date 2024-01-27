@@ -1,10 +1,10 @@
 export default function Result(props) {
-
+  const percentage = (props.score / 5) * 100;
   return (
     <div>
       <div className='top-section'>
         <h1 className='title'>FINAL RESULTS!</h1>
-        <p className='sub-title'>1 out of 5 are correct - (20%)</p>
+        <p className='sub-title'>{props.score} out of 5 are correct - ({percentage}%)</p>
       </div>
       <button id="playBtn" onClick={() => props.handleClick()}>Play Again!</button>
       <footer>
