@@ -6,22 +6,28 @@ import Welcome from "./components/Welcome";
 import "./media.css";
 
 function App() {
+  //for changing pages or components, score and dark mode respectively
   const [currentPage, changePage] = useState("Welcome");
   const [score, newScore] = useState(0)
   const [mode, changeMode] = useState("Light")
 
+  //to handle the switch bw components
   const handleSwitchPage = (page) => {
     changePage(page)
   };
 
+  //to handle the score increments
   const handleScore = (score) => {
     newScore(score)
     changePage("Result")
   }
-
+  
+  //to switch bw modes
   const switchMode = () => {
     mode == "Dark" ? changeMode("Light") : changeMode("Dark")
   }
+
+  //to render the pages
   const renderPage = () => {
     switch (currentPage) {
       case 'Welcome':
@@ -36,23 +42,26 @@ function App() {
   };
 
   return (
-      <div className="main" style={{ backgroundColor: mode === "Dark" ? "rgb(40, 40, 40)" : "White" }}>
-        <div id="mode" onClick={switchMode}
-          style={{
-            backgroundColor: mode === "Dark" ? "rgb(48, 48, 48)" : "White",
-            color: mode === "Dark" ? "White" : "Black",
-            borderColor: mode === "Dark" ? "White" : "black"
-          }}
-        >{mode}</div>
-        {renderPage()}
-        <footer style = {{
-          backgroundColor: mode === "Dark" ? "rgb(40, 40, 40)" : "white",
-          color: mode === "Dark" ? "white" : "rgb(40,40,40)"
-        }}>
-          <div>Developed & Designed by:</div>
-          <div id="creator-name">Shubham Thakur</div>
-        </footer>
-      </div>
+    <div className="main" style={{
+      backgroundColor: mode === "Dark" ? "rgb(40, 40, 40)" : "White"
+    }}>
+      {/* mode button */}
+      <div id="mode" onClick={switchMode}
+        style={{
+          backgroundColor: mode === "Dark" ? "rgb(48, 48, 48)" : "White",
+          color: mode === "Dark" ? "White" : "Black",
+          borderColor: mode === "Dark" ? "White" : "black"
+        }}
+      >{mode}</div>
+      {renderPage()}
+      <footer style={{
+        backgroundColor: mode === "Dark" ? "rgb(40, 40, 40)" : "white",
+        color: mode === "Dark" ? "white" : "rgb(40,40,40)"
+      }}>
+        <div>Developed & Designed by:</div>
+        <div id="creator-name">Shubham Thakur</div>
+      </footer>
+    </div>
   );
 }
 

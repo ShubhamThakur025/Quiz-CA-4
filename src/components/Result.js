@@ -1,4 +1,6 @@
 export default function Result(props) {
+  
+  //to calculate the percentage
   const percentage = (props.score / 5) * 100;
   return (
     <div>
