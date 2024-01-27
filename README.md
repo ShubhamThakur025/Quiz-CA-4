@@ -10,6 +10,8 @@ This is a part of CA-4 for frontend web developement and CA-3 for design for dev
 3. Question highlighted with a dedicated button
 
 ### Enjoy it here:
-https://quiz-ca4-shubham-thakur.netlify.app/
+https://quiz-ca-4-shubham-thakur.netlify.app
+### Design File:
+https://www.figma.com/file/Gjt274YZTNPfUUOe8o3efh/Quiz_App(ShubhamThakur)?type=design&node-id=3%3A184&mode=design&t=eiRe4V8BaPnecTJI-1
 
 Happy Coding ❤️!
