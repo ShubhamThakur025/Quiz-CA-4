@@ -35,8 +35,7 @@ function App() {
   };
 
   return (
-    <div>
-      <body style={{backgroundColor: mode === "Dark" ? "rgb(40, 40, 40)" : "White" }}>
+      <div className="main" style={{ backgroundColor: mode === "Dark" ? "rgb(40, 40, 40)" : "White" }}>
         <div id="mode" onClick={switchMode}
           style={{
             backgroundColor: mode === "Dark" ? "rgb(40, 40, 40)" : "White",
@@ -45,9 +44,14 @@ function App() {
           }}
         >{mode}</div>
         {renderPage()}
-      </body>
-
-    </div>
+        <footer style = {{
+          backgroundColor: mode === "Dark" ? "rgb(40, 40, 40)" : "white",
+          color: mode === "Dark" ? "white" : "rgb(40,40,40)"
+        }}>
+          <div>Developed & Designed by:</div>
+          <div id="creator-name">Shubham Thakur</div>
+        </footer>
+      </div>
   );
 }
 

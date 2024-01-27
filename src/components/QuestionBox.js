@@ -9,15 +9,17 @@ export default function QuestionBox(props) {
     return questions[currentQuestion].options[ans].isCorrect
   }
   const setQuestion = (ans) => {
+    let updatedScore = score
     if (checkQuestion(ans)) {
-      incrementScore(prevscore => prevscore + 1)
+      updatedScore += 1
+      incrementScore(updatedScore)
     }
     if (currentQuestion < questions.length - 1) {
       highlight("white")
       changeQuestion(currentQuestion + 1)
     }
     else {
-      props.handleClick(score)
+      props.handleClick(updatedScore)
 
     }
   }
