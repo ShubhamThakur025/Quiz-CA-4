@@ -53,6 +53,7 @@ function App() {
           borderColor: mode === "Light" ? "White" : "black"
         }}
       >{mode}</div>
+      <div id = "Logo"></div>
       {renderPage()}
       <footer style={{
         backgroundColor: mode === "Light" ? "rgb(40, 40, 40)" : "white",

@@ -18,7 +18,15 @@
     color: white;
     padding: 3vw;
 }
-
+#Logo{
+    background-image: url("./assets/logo.png");
+    background-size: cover;
+    height: 100px;
+    width: 169px;
+    position: absolute;
+    top: .5vw;
+    left: 2vw;
+}
 .title {
     font-size: 8vw;
     text-shadow: 3px 3px 6px #390b75;
